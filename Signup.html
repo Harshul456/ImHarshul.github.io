@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML CSS Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="/" id="navbar__logo"> <i class="fa-solid fa-person-running"></i> Fitness Tracker</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/" class="navbar__links"> <i class="fa-solid fa-house"></i> Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/track.html" class="navbar__links"> <i class="fa-solid fa-clipboard-list"></i> Track</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/" class="navbar__links">Workouts</a>
+          </li>
+          <li class="navbar__btn"><a href="/Signup.html" class="button">Sign Up</a></li>
+          <li class="navbar__btn"><a href="/login.php" class="button2">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <div class="sign-up-form">
+        <h1> Sign up now</h1>
+        <form action="#" method="post" id="signup" novalidate>
+          <div>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" class="input-box">
+          </div>
+          
+          <div>
+              <label for="email">email</label>
+              <input type="email" id="email" name="email" class="input-box">
+          </div>
+          
+          <div>
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" class="input-box">
+          </div>
+          
+          <div>
+              <label for="password_confirmation">Repeat password</label>
+              <input type="password" id="password_confirmation" name="password_confirmation" class="input-box">
+          </div>
+          
+          <button>Sign up</button>
+      </form>
+
+</body>
+</html>
