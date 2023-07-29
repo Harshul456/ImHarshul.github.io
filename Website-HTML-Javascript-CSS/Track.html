@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    button {
+    display: block;
+    margin: auto;
+  }
+  </style>
+  <head>
+  
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML CSS Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="/" id="navbar__logo"> <i class="fa-solid fa-person-running"></i> Fitness Tracker</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/" class="navbar__links"> <i class="fa-solid fa-house"></i> Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/track.html" class="navbar__links"> <i class="fa-solid fa-clipboard-list"></i> Track</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/" class="navbar__links">Workouts</a>
+          </li>
+          <li class="navbar__btn"><a href="/Signup.html" class="button">Sign Up</a></li>
+          <li class="navbar__btn"><a href="/Login.html" class="button2">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="main">
+      <div class="main__container">
+        <div class="main__content">
+          <h1> <i class="fa-solid fa-layer-group"></i> TRACK YOUR</h1>
+          <h2> <i class="fa-solid fa-bullseye"></i> GOALS</h2>
+          <p> <i class="fa-solid fa-mountain"></i> Reach new heights</p>
+          <button class="main__btn"><a href="/Signup.html">Get Started</a></button>
+        </div>
+        <div class="main__img--container">
+          <img id="main__img" src="images/pic1 (2).svg" /> 
+        </div>
+      </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="services">
+      <h1>Start Your Journey</h1>
+      <div class="services__container">
+        <div class="services__card">
+          <h2>Discover</h2>
+          <p>Explore Workouts</p>
+          <button><a href="/Signup.html">Get Started </a></button>
+        </div>
+        <div class="services__card">
+          <h2>Ready?</h2>
+          <p>Start Tracking Now</p>
+          <button><a href="/Signup.html">Get Started </a></button>
+        </div>
+      </div>
+    </div>
+     <!-- Footer Section -->
+     <div class="footer__container">
+      <div class="footer__links">
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>About Us</h2>
+          </div>
+          <div class="footer__link--items">
+            <h2>Contact Us</h2>
+          </div>
+        </div>
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>Videos</h2>
+          </div>
+          <div class="footer__link--items">
+            <h2>Social Media</h2>
+            <a href="/">Instagram</a> <a href="/">Facebook</a>
+            <a href="/">Youtube</a> <a href="/">Twitter</a>
+          </div>
+        </div>
+      </div>
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <div class="footer__logo">
+          </div>
+          <div class="social__icons">
+            <a
+              class="social__icon--link"
+              href="/"
+              target="_blank"
+              aria-label="Facebook"
+            >
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a
+              class="social__icon--link"
+              href="/"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              class="social__icon--link"
+              href="//www.youtube.com/channel/UCsKsymTY_4BYR-wytLjex7A?view_as=subscriber"
+              target="_blank"
+              aria-label="Youtube"
+            >
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a
+              class="social__icon--link"
+              href="/"
+              target="_blank"
+              aria-label="Twitter"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a
+              class="social__icon--link"
+              href="/"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
+
