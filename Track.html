@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML CSS Website</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="/" id="navbar__logo"> <i class="fa-solid fa-person-running"></i> Fitness Tracker</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/" class="navbar__links"> <i class="fa-solid fa-house"></i> Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/track.html" class="navbar__links"> <i class="fa-solid fa-clipboard-list"></i> Track</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/" class="navbar__links">Workouts</a>
+          </li>
+          <li class="navbar__btn"><a href="/Signup.html" class="button">Sign Up</a></li>
+          <li class="navbar__btn"><a href="/login.php" class="button2">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+  
+<!doctype html>
+<html lang="en">
+  <head>
+    <h1>Chart JS 2.9.x</h1>
+
+    <div class ="row">
+     <div class="col-8 offset-2">
+      <div class="card mb-3">
+        <div class="card-body border-bottom">Alter your calories, and exercise for today</div>
+        <div class="row no-gutters">
+          <div class="col-md-6">
+            <canvas id="myChart"></canvas>
+          </div>
+          <div class="col-md-6">
+            <div class="card-body">
+              <h5 class="card-title">Legend</h5>
+              <div class="row">
+              <div class="col-auto">
+              <div class="form-group mb-2">
+                <span>Enter the amount of calories you consumed</span>
+              </div>
+              <div class="col-auto">
+                  <input type="text" onchange="updateChart()" class="form-control" id="calories" value="1">
+                </div>
+                <div class="form-group mx-sm-3 mb-2">
+                  <span>Enter the amount of calories you burned</span>
+                  <input type="text" onchange="updateChart()" class="form-control" id="calories burned" value="9">
+                </div>
+                <button type="submit" class="btn btn-primary mb-2">Confirm</button>
+              </div>
+          </div>
+        </div>
+      </div>
+  
+  </div>
+  </div>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
+<script src="chart.min.js"></script>
+  
+  
+    <canvas id="myChart"></canvas>
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
+  <script>
+const ctx = document.getElementById('myChart');
+var calories = document.getElementById('calories');
+var caloriesburned = document.getElementById('calories burned')
+var caloriesnew = calories.value;
+
+console.log(calories);
+ 
+
+    chart = new Chart(ctx, {
+      type: 'doughnut',
+      data: {
+        labels: ['Calories', 'Calories Burned'],
+        datasets: [{
+          label: '# of Votes',
+          data: [calories.value, caloriesburned.value],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+
+    function upadateChart() {
+      var updateValues = [calories.value, caloriesburned.value];
+      chart.data.datasets[0].data = updateValues;
+      chart.update(); 
+
+    };
+  </script>
+  
+</body>
+</html>
+
+
+
